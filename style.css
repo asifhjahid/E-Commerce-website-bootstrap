@@ -1,3 +1,7 @@
+body{
+    background-color: rgba(194, 193, 193, 0.527);
+}
+
 .navbar-brand img{
     width: 50px;
     height: auto;
@@ -6,13 +10,21 @@
     /* background-color: red !important;
     opacity: .8; */
     
-    background-color: rgba(230, 23, 23, 0.062)!important;
+    background-color: #2c3e50 !important;
+    
     /* background-color:#ecf0f1!important; */
     /* color: black !important; */
 
 }
+
 .navbar a{
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
+    /* list-style: none !important; */
+}
+
+.navbar .navMenu-a:hover{
+   border-bottom: 4px solid green !important ;
+    transition: all .5s ease-in-out;
     /* list-style: none !important; */
 }
 /* button{
@@ -50,25 +62,27 @@
 
 .mainDivCarosel{
     width: 100% !important;
-    height: 90vh !important;
+    height: 100vh !important;
     box-sizing: border-box;
     margin: 0;  
     padding: 0;
+   
 }
 .carousel-bg{
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    height: 88vh;
+    background-color: #16a085;
+    /* border-radius: 10px; */
+    height: 100vh;
+    /* position:  absolute; */
 }
 .col-md-6 img{
     margin-top: 140px;
     width: 78% !important;
-    height: 50vh !important;
+    height: 70vh !important;
 }
 .carousel-item{
     padding-left: 40px;
 }
-.carousel-item .price{
+.price{
     color:#e67e22 ;
 }
 .price-button{
@@ -84,36 +98,88 @@
 
 .card-img-top{
     width: 100%;
-    height: 50vh;
+    height: 30vh;
 }
 
 .card{
-    height: 60vh;
-    box-shadow: 0 0 5px #656464a3;
-    /* transform: scale(.99); */
+    height: 45vh;
+    /* box-shadow: 0 0 5px #656464a3; */
+    box-shadow: 2px 2px 2px rgb(201, 190, 190);
+    /* transform: scale(.5); */
     transition: all .5s ease-in-out;
     box-sizing: border-box;
 }
-
+.card-body{
+    height: 30vh;
+}
 .card:hover{
-    box-shadow: 0 0 10px 1px rgb(9, 250, 158);
+    /* box-shadow: 0 0 10px 1px rgb(9, 250, 158); */
+    box-shadow: 2px 2px 5px 1px rgb(9, 250, 158);
     transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.searchInput{
+    background-color: rgba(255, 255, 255, 0) !important;
+    /* border-style: none; */
+    border: .1px solid rgb(253, 253, 253);
 }
 
 .searchInput:focus{
 
     outline: none !important;
-    border:1px solid rgba(25,135,84, 0.562);
-    box-shadow: 0 0 15px rgba(25,135,84, 0.719);
-
+    border:1px solid rgba(222, 231, 227, 0.822);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.925);
+    color: white;
+    font-size: larger;
+ 
 }
 
 .searchInput:focus + .searchButton{
 
     display: initial;
-    
+    color: black !important;
 }
 
 .searchButton{
+    color: rgb(255, 255, 255) !important;
 display: none;
+
+}
+.card-text{
+    font-size: .9rem;
+    margin-bottom: 4px;
+}
+
+
+.slider{
+    height: 50px;
+    width: 60px;
+    background-color: #2c3e50;
+    position: relative;
+    right: -92%;
+    bottom: 18px;
+    
+
+}
+
+.inner{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: rgb(255, 255, 255);
+    transform: rotate(90deg);
+    top: 10%;
+    left: 15%;
+    transition: all 1s ease-in-out;
+    /* transform: translate(0% , 0%); */
+
+}
+
+.inner:hover{
+    transform: scale(1.1) rotate(450deg) translateX(-760px);
+    background-color: green;
+    box-shadow: 0 0 4px black;
+    /* transform: translate(0% , 0%); */
 }
