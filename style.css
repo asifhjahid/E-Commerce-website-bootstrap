@@ -93,7 +93,7 @@ body{
     border-radius: 2px;
 }
 .price-button:hover{
-    background-color: #5c1a12 !important;
+    background-color: #b11f0e !important;
 }
 
 .card-img-top{
@@ -114,9 +114,9 @@ body{
 }
 .card:hover{
     /* box-shadow: 0 0 10px 1px rgb(9, 250, 158); */
-    box-shadow: 2px 2px 5px 1px rgb(9, 250, 158);
+    box-shadow: 2px 2px 5px 1px rgb(250, 9, 9);
     transform: scale(1.1);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 .searchInput{
@@ -163,7 +163,7 @@ display: none;
 
 }
 
-.inner{
+.inner, .inner1{
     position: absolute;
     height: 40px;
     width: 40px;
@@ -172,14 +172,14 @@ display: none;
     transform: rotate(90deg);
     top: 10%;
     left: 15%;
-    transition: all 1s ease-in-out;
+    transition: all .8s ease-in-out;
     /* transform: translate(0% , 0%); */
 
 }
 
 .inner:hover{
     transform: scale(1.1) rotate(450deg) translateX(-760px);
-    background-color: green;
-    box-shadow: 0 0 4px black;
+    background-color: rgb(190, 11, 5);
+    box-shadow: 0 0 4px 2px rgb(236, 4, 4);
     /* transform: translate(0% , 0%); */
 }
