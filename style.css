@@ -100,7 +100,9 @@ body{
     width: 100%;
     height: 30vh;
 }
-
+.see-all{
+    text-decoration: none;
+}
 .card{
     height: 45vh;
     /* box-shadow: 0 0 5px #656464a3; */
